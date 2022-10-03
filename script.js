@@ -4,9 +4,7 @@ let before;
 
 for (let i=0; i<keys.length; i++) {
     let key = keys[i];
-    key.addEventListener('click', solve )
-
-    function solve(){
+    key.onclick = function solve(){
         let action = key.dataset.action;
         let display = document.querySelector('.display');
         let displayed = display.textContent;
